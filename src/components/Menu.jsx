@@ -10,6 +10,33 @@ const Menu = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
 
     useGSAP(() => {
+        const parallaxTimeline = gsap.timeline({
+            scrollTrigger: {
+                trigger: "#menu",
+                start: "top 120%",
+                end: "bottom 80%",
+                scrub: true
+            }
+        })
+
+        parallaxTimeline
+            .fromTo("#m-right-leaf",
+                {x: 80, y: -80},
+                {
+                    x: 0, y: 0,
+                    ease: "power1.inOut"
+                }
+            )
+            .fromTo("#m-left-leaf",
+                {x: -160, y: 160},
+                {
+                    x: 0, y: 0,
+                    ease: "power1.inOut"
+                })
+
+    });
+
+    useGSAP(() => {
         gsap.fromTo("#title", {opacity: 0}, {opacity: 1, duration: 1});
         gsap.fromTo(".cocktail img", {opacity: 0, xPercent: -100}, {
             opacity: 1, xPercent: 0, duration: 1, ease: "power1.inOut"

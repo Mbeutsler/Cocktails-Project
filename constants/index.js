@@ -9,7 +9,7 @@ export const navLinks = [
     },
     {
         title: 'The Art',
-        id: 'work'
+        id: 'art'
     },
     {
         title: 'Contact',
