@@ -90,7 +90,7 @@ body {
     }
 
     #hero {
-        @apply relative z-10 min-h-dvh w-full border border-e-transparent;
+        @apply relative z-10 min-h-dvh w-full border border-transparent;
 
         h1 {
             @apply md:mt-32 mt-40 text-8xl md:text-[20vw] leading-none text-center font-modern-negra;
@@ -155,11 +155,11 @@ body {
         .list {
             @apply container mx-auto relative z-10 flex md:flex-row flex-col justify-between items-start gap-20 pt-40 2xl:px-0 px-5;
 
-            .popular {
+            .favorite {
                 @apply space-y-8 w-full md:w-fit;
             }
 
-            .loved {
+            .popular {
                 @apply space-y-8 w-full md:w-fit pb-20 md:pb-0;
             }
 

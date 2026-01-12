@@ -21,14 +21,14 @@ export const cocktailsList = [
     {
         name: "Chapel Hill Shiraz",
         country: "AU",
-        detail: "Battle",
+        detail: "Bottle",
         price: "$22"
     },
     {
         name: "Caten Malbee",
         country: "AU",
-        detail: "Battle",
-        price: "$29"
+        detail: "Bottle",
+        price: "$49"
     },
     {
         name: "Rhino Pale Ale",
@@ -48,13 +48,13 @@ export const mocktailsList = [
     {
         name: "Tropical Bloom",
         country: "US",
-        detail: "Battle",
+        detail: "500ml",
         price: "$12"
     },
     {
         name: "Passionfruit Mint",
         country: "US",
-        detail: "Battle",
+        detail: "600ml",
         price: "$14"
     },
     {
